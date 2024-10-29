@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('pokemons', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable(false);
+            $table->string('category')->nullable(false);
+            $table->string('type')->nullable(false);
+            $table->string('ability')->nullable(false);
+            $table->tinyInteger('stage_of_evolution')->unsigned()->nullable(false);
+            $table->float('height', 6, 2, true);
+            $table->float('weight', 6, 2, true);
             $table->timestamps();
         });
     }
