@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pokemons', function (Blueprint $table) {
+        Schema::create('pokemon', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable(false);
             $table->string('category')->nullable(false);
@@ -20,6 +20,7 @@ return new class extends Migration
             $table->tinyInteger('stage_of_evolution')->unsigned()->nullable(false);
             $table->float('height', 6, 2, true);
             $table->float('weight', 6, 2, true);
+            $table->string('image')->nullable(false);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pokemons');
+        Schema::dropIfExists('pokemon');
     }
 };
