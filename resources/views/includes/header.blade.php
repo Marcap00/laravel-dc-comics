@@ -1,4 +1,4 @@
 <header>
     <img src="{{ asset('logomark.svg') }}" alt="">
-    <h1>Header</h1>
+    <h1>Laravel <span>Pokemon</span> Database</h1>
 </header>
