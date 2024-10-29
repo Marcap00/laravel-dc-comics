@@ -5,10 +5,8 @@
 <main>
     <div class="container">
         <div class="row row-cols-4 row-cols-sm-1 row-cols-md-2 g-2">
-            @forelse ($pokemon as $p)
             <div class="col my-2">
                 <div class="card">
-                    <a href="{{route('pokemon.show', $p->id)}}">
                         <div class="card-img">
                             <img src="{{ $p->image }}" alt="{{ $p->name }}">
                         </div>
@@ -16,6 +14,7 @@
                             <h2 class="card-title mb-2">
                                 {{ $p->name }}
                             </h2>
+
                             <p class="card-text">
                                 Category: <span>{{ $p->category }}</span>
                             </p>
@@ -35,12 +34,8 @@
                                 Weight: <span>{{ $p->weight }}</span>
                             </p>
                         </div>
-                    </a>
                 </div>
             </div>
-            @empty
-                <p class="text-danger">No more pokemon available...</p>
-            @endforelse
         </div>
     </div>
 </main>
