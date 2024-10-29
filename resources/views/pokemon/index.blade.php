@@ -4,6 +4,7 @@
 @section('main-content')
 <main>
     <div class="container">
+        <a class="btn btn-red my-2" href="{{ route('pokemon.create') }}">Aggiungi un nuovo pokemon</a>
         <div class="row row-cols-4 row-cols-sm-1 row-cols-md-2 g-2">
             @forelse ($pokemon as $p)
             <div class="col my-2">
