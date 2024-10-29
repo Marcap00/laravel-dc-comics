@@ -1,0 +1,35 @@
+.card {
+    padding: 1rem;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.card-body {
+    min-height: 250px;
+}
+
+.card-title {
+    text-align: center;
+
+
+    i {
+        color: #FF2D20;
+    }
+}
+
+.card-text {
+    color: #8b8b8b;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    span {
+        color: white;
+        font-size: 14px;
+
+        font-weight: 600;
+    }
+
+
+}
