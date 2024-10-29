@@ -30,6 +30,39 @@ img {
     color: #FFf;
 }
 
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.1;
+    }
+
+    &.btn-red {
+        background-color: #FF2D20;
+        color: #fff;
+
+        &:hover {
+            background-color: #fb564e;
+            color: #fff;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: #8b8b8b;
+        color: #000;
+
+        &:hover {
+            background-color: #6b6b6b;
+            color: #000;
+        }
+    }
+}
+
+
+
 /* GENERAL */
 body {
     background-color: #1C1C1C;
