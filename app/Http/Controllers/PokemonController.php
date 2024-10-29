@@ -22,7 +22,9 @@ class PokemonController extends Controller
      */
     public function create()
     {
-        //
+
+        $links_pages = config('links_pages');
+        return view('pokemon.create', compact('links_pages'));
     }
 
     /**
