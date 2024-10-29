@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pokemon;
 use Illuminate\Http\Request;
 
 class PokemonController extends Controller
@@ -11,7 +12,9 @@ class PokemonController extends Controller
      */
     public function index()
     {
-        return view('pokemon.index');
+        $pokemon = Pokemon::all();
+        $links_pages = config('links_pages');
+        return view('pokemon.index', compact('pokemon', 'links_pages'));
     }
 
     /**
@@ -35,7 +38,9 @@ class PokemonController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $p = Pokemon::findorFail($id);
+        $links_pages = config('links_pages');
+        return view('pokemon.show', compact('p', 'links_pages'));
     }
 
     /**
