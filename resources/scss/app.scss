@@ -40,26 +40,20 @@ h1 {
     color: #fff;
 }
 
-ul {
-    list-style: none;
-
-    a {
-        &:visited {
-            color: #8b8b8b;
-        }
-
-        &:hover {
-            text-decoration: underline;
-            color: #FF2D20;
-        }
-
-
-    }
-}
 
 a {
     text-decoration: none;
-    color: #fff;
+
+    h1 {
+        color: #FF2D20;
+    }
+
+    color: #FF2D20;
+
+    &:hover {
+        text-decoration: underline;
+        color: #FF2D20;
+    }
 }
 
 header,
