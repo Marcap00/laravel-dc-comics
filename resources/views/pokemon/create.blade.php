@@ -6,7 +6,7 @@
 @section('main-content')
 <main>
     <div class="container">
-        <form action="#" method="POST">
+        <form action="{{route('pokemon.store')}}" method="POST" class="text-center card">
             @csrf
             <div class="row row-cols-2 g-2 text-white">
                 <div class="col my-2">
@@ -36,25 +36,25 @@
                 <div class="col my-2">
                     <div class="form-group">
                         <label for="image"><h3 class="mb-2">Image Path: </h3></label>
-                        <input type="number" class="form-control p-05" id="image" name="image" placeholder="Enter pokemon image path...">
+                        <input type="text" class="form-control p-05" id="image" name="image" placeholder="Enter pokemon image path...">
                     </div>
                 </div>
                 <div class="col my-2">
                     <div class="form-group">
                         <label for="weight"><h3 class="mb-2">Weight: </h3></label>
-                        <input type="number" class="form-control p-05" id="weight" name="weight" min="0" max="1000">
+                        <input type="number" class="form-control p-05" id="weight" name="weight" min="0" max="1000" step="0.01">
                     </div>
                 </div>
                 <div class="col my-2">
                     <div class="form-group">
                         <label for="stage"><h3 class="mb-2">Stage of evolution: </h3></label>
-                        <input type="number" class="form-control p-05" id="stage" name="stage" min="1" max="3">
+                        <input type="number" class="form-control p-05" id="stage" name="stage_of_evolution" min="1" max="3">
                     </div>
                 </div>
                 <div class="col my-2">
                     <div class="form-group">
                         <label for="height"><h3 class="mb-2">Height: </h3></label>
-                        <input type="number" class="form-control p-05" id="height" name="height" min="0" max="1000">
+                        <input type="number" class="form-control p-05" id="height" name="height" min="0" max="1000" step="0.01">
                     </div>
                 </div>
                 <div class="flex-center my-3">
