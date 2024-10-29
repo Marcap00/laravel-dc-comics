@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/pokemon', [PokemonController::class, 'index'])->name('pokemon.index');
+Route::get('/pokemon/{id}', [PokemonController::class, 'show'])->name('pokemon.show');
