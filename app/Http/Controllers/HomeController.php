@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $links_pages = config('links_pages');
+        return view('pages.home', compact('links_pages'));
     }
 }
