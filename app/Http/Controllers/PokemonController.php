@@ -32,7 +32,11 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dataForm = $request->all();
+
+        $newPokemon = Pokemon::create($dataForm);
+
+        return redirect()->route('pokemon.show', $newPokemon->id);
     }
 
     /**
