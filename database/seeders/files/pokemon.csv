@@ -1,0 +1,52 @@
+name, category, type, ability, stage of evolution, height, weight, image
+Bulbasaur, Seed Pokémon, Grass/Poison, Overgrow, 1, 0.7, 6.9, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
+Ivysaur, Seed Pokémon, Grass/Poison, Overgrow, 2, 1.0, 13.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png
+Venusaur, Seed Pokémon, Grass/Poison, Overgrow, 3, 2.0, 100.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png
+Charmander, Lizard Pokémon, Fire, Blaze, 1, 0.6, 8.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png
+Charmeleon, Flame Pokémon, Fire, Blaze, 2, 1.1, 19.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png
+Charizard, Flame Pokémon, Fire/Flying, Blaze, 3, 1.7, 90.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png
+Squirtle, Tiny Turtle Pokémon, Water, Torrent, 1, 0.5, 9.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png
+Wartortle, Turtle Pokémon, Water, Torrent, 2, 1.0, 22.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png
+Blastoise, Shellfish Pokémon, Water, Torrent, 3, 1.6, 85.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png
+Caterpie, Worm Pokémon, Bug, Shield Dust, 1, 0.3, 2.9, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png
+Metapod, Cocoon Pokémon, Bug, Shed Skin, 2, 0.7, 9.9, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png
+Butterfree, Butterfly Pokémon, Bug/Flying, Compound Eyes, 3, 1.1, 32.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png
+Weedle, Hairy Bug Pokémon, Bug/Poison, Shield Dust, 1, 0.3, 3.2, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png
+Kakuna, Cocoon Pokémon, Bug/Poison, Shed Skin, 2, 0.6, 10.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png
+Beedrill, Poison Bee Pokémon, Bug/Poison, Swarm, 3, 1.0, 29.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png
+Pidgey, Tiny Bird Pokémon, Normal/Flying, Keen Eye, 1, 0.3, 1.8, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png
+Pidgeotto, Bird Pokémon, Normal/Flying, Keen Eye, 2, 1.1, 30.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png
+Pidgeot, Bird Pokémon, Normal/Flying, Keen Eye, 3, 1.5, 39.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png
+Rattata, Mouse Pokémon, Normal, Run Away, 1, 0.3, 3.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png
+Raticate, Mouse Pokémon, Normal, Run Away, 2, 0.7, 18.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png
+Spearow, Tiny Bird Pokémon, Normal/Flying, Keen Eye, 1, 0.3, 2.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png
+Fearow, Beak Pokémon, Normal/Flying, Keen Eye, 2, 1.2, 38.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png
+Ekans, Snake Pokémon, Poison, Intimidate, 1, 2.0, 6.9, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png
+Arbok, Cobra Pokémon, Poison, Intimidate, 2, 3.5, 65.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png
+Pikachu, Mouse Pokémon, Electric, Static, 1, 0.4, 6.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png
+Raichu, Mouse Pokémon, Electric, Static, 2, 0.8, 30.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png
+Sandshrew, Mouse Pokémon, Ground, Sand Veil, 1, 0.6, 12.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png
+Sandslash, Mouse Pokémon, Ground, Sand Veil, 2, 1.0, 29.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png
+Nidoran♀, Poison Pin Pokémon, Poison, Poison Point, 1, 0.4, 7.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png
+Nidorina, Poison Pin Pokémon, Poison, Poison Point, 2, 0.8, 20.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png
+Nidoqueen, Drill Pokémon, Poison/Ground, Poison Point, 3, 1.3, 60.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png
+Nidoran♂, Poison Pin Pokémon, Poison, Poison Point, 1, 0.5, 9.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png
+Nidorino, Poison Pin Pokémon, Poison, Poison Point, 2, 0.9, 19.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png
+Nidoking, Drill Pokémon, Poison/Ground, Poison Point, 3, 1.4, 62.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png
+Clefairy, Fairy Pokémon, Fairy, Cute Charm, 1, 0.6, 7.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png
+Clefable, Fairy Pokémon, Fairy, Cute Charm, 2, 1.3, 40.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png
+Vulpix, Fox Pokémon, Fire, Flash Fire, 1, 0.6, 9.9, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png
+Ninetales, Fox Pokémon, Fire, Flash Fire, 2, 1.1, 19.9, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png
+Jigglypuff, Balloon Pokémon, Normal/Fairy, Cute Charm, 1, 0.5, 5.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png
+Wigglytuff, Balloon Pokémon, Normal/Fairy, Cute Charm, 2, 1.0, 12.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png
+Zubat, Bat Pokémon, Poison/Flying, Inner Focus, 1, 0.8, 7.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png
+Golbat, Bat Pokémon, Poison/Flying, Inner Focus, 2, 1.6, 55.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png
+Oddish, Weed Pokémon, Grass/Poison, Chlorophyll, 1, 0.5, 5.4, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png
+Gloom, Weed Pokémon, Grass/Poison, Chlorophyll, 2, 0.8, 8.6, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png
+Vileplume, Flower Pokémon, Grass/Poison, Chlorophyll, 3, 1.2, 18.6, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png
+Paras, Mushroom Pokémon, Bug/Grass, Effect Spore, 1, 0.3, 5.4, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png
+Parasect, Mushroom Pokémon, Bug/Grass, Effect Spore, 2, 1.0, 29.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png
+Venonat, Insect Pokémon, Bug/Poison, Compound Eyes, 1, 1.0, 30.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png
+Venomoth, Poison Moth Pokémon, Bug/Poison, Shield Dust, 2, 1.5, 12.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png
+Diglett, Mole Pokémon, Ground, Sand Veil, 1, 0.2, 0.8, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png
+Dugtrio, Mole Pokémon, Ground, Sand Veil, 2, 0.7, 33.3, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png
