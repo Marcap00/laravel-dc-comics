@@ -39,7 +39,7 @@
                 </div>
             </div>
             @empty
-                <p class="text-danger">No more pokemon available...</p>
+                <p class="text-red">No more pokemon available...</p>
             @endforelse
         </div>
     </div>

@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
 /* Pokemon Resources */
-
 Route::name('pokemon.')->prefix('pokemon')->group(function () {
     Route::get('/', [PokemonController::class, 'index'])->name('index');
     Route::post('/', [PokemonController::class, 'store'])->name('store');
