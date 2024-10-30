@@ -77,6 +77,9 @@ class PokemonController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $p = Pokemon::findorFail($id);
+        $p->delete();
+
+        return redirect()->route('pokemon.index');
     }
 }

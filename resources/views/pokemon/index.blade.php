@@ -35,12 +35,16 @@
                     <td class="flex-align-center">
                         <a class="btn btn-red me-1" href="{{ route('pokemon.show', $p->id) }}"><i class="fas fa-eye"></i></a>
                         <a class="btn btn-secondary me-1" href="{{ route('pokemon.edit', $p->id) }}"><i class="fas fa-pencil"></i></a>
-                        <button class="btn btn-red me-1 py-1 px-2" type="submit"><i class="fas fa-trash fa-lg"></i></button>
+                        <form action="{{ route('pokemon.destroy', $p->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-red me-1 py-1 px-2" type="submit"><i class="fas fa-trash fa-lg"></i></button>
+                        </form>
                     </td>
                 </tr>
                 @empty
                 <tr>
-                    <td class="text-danger">No more pokemon available...</td>
+                    <td colspan="9" class="text-danger">No more pokemon available...</td>
                 </tr>
                 @endforelse
             </tbody>
