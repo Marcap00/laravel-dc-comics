@@ -63,7 +63,7 @@
                         Edit
                         <i class="fas fa-pencil ms-05"></i>
                     </button>
-                    <button type="reset" class="btn btn-grey me-3">
+                    <button type="reset" class="btn btn-secondary me-3">
                         Reset fields
                         <i class="fas fa-undo ms-05"></i>
                     </button>

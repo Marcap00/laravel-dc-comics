@@ -61,7 +61,7 @@
                     <button type="submit" class="btn btn-red me-3">
                         Create new pokemon
                     </button>
-                    <button type="reset" class="btn btn-grey me-3">
+                    <button type="reset" class="btn btn-secondary me-3">
                         Reset fields
                     </button>
                 </div>

@@ -23,7 +23,7 @@
             <tbody>
                 @forelse ($pokemon as $p)
                 <tr>
-                    <td>{{$p->id}}</td>
+                    <td>{{ $p->id }}</td>
                     <td>{{ $p->name }}</td>
                     <td>{{ $p->category }}</td>
                     <td>{{ $p->type }}</td>
