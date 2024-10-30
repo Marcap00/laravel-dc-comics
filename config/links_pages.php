@@ -2,5 +2,5 @@
 
 return [
     'home' => 'Home',
-    'pokemon.index' => 'Pokemon',
+    'pokemon.index' => 'Data Administration',
 ];

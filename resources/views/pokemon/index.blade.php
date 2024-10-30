@@ -5,44 +5,46 @@
 <main>
     <div class="container">
         <a class="btn btn-red my-2" href="{{ route('pokemon.create') }}">Aggiungi un nuovo pokemon</a>
-        <div class="row row-cols-4 row-cols-sm-1 row-cols-md-2 g-2">
-            @forelse ($pokemon as $p)
-            <div class="col my-2">
-                <div class="card">
-                    <a href="{{route('pokemon.show', $p->id)}}">
-                        <div class="card-img">
-                            <img src="{{ $p->image }}" alt="{{ $p->name }}">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title mb-2">
-                                {{ $p->name }}
-                            </h2>
-                            <p class="card-text">
-                                Category: <span>{{ $p->category }}</span>
-                            </p>
-                            <p class="card-text">
-                                Type: <span>{{ $p->type }}</span>
-                            </p>
-                            <p class="card-text">
-                                Ability: <span>{{ $p->ability }}</span>
-                            </p>
-                            <p class="card-text">
-                                Stage: <span>{{ $p->stage_of_evolution }}° Evolution</span>
-                            </p>
-                            <p class="card-text">
-                                Height: <span>{{ $p->height }}</span>
-                            </p>
-                            <p class="card-text">
-                                Weight: <span>{{ $p->weight }}</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            @empty
-                <p class="text-danger">No more pokemon available...</p>
-            @endforelse
-        </div>
+        <table class="table text-white text-center">
+            <thead class="text-danger">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Type</th>
+                    <th>Ability</th>
+                    <th>Stage of Evolution</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Image</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @forelse ($pokemon as $p)
+                <tr>
+                    <td>{{$p->id}}</td>
+                    <td>{{ $p->name }}</td>
+                    <td>{{ $p->category }}</td>
+                    <td>{{ $p->type }}</td>
+                    <td>{{ $p->ability }}</td>
+                    <td>{{ $p->stage_of_evolution }}</td>
+                    <td>{{ $p->height }}</td>
+                    <td>{{ $p->weight }}</td>
+                    <td>{{ $p->image }}</td>
+                    <td class="flex-align-center">
+                        <a class="btn btn-red me-1" href="{{ route('pokemon.show', $p->id) }}"><i class="fas fa-eye"></i></a>
+                        <a class="btn btn-secondary me-1" href="{{-- {{ route('pokemon.edit', $p->id) }} --}}"><i class="fas fa-pencil"></i></a>
+                        <button class="btn btn-red me-1 py-1 px-2" type="submit"><i class="fas fa-trash fa-lg"></i></button>
+                    </td>
+                </tr>
+                @empty
+                <tr>
+                    <td class="text-danger">No more pokemon available...</td>
+                </tr>
+                @endforelse
+            </tbody>
+        </table>
     </div>
 </main>
 @endsection

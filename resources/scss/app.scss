@@ -54,6 +54,14 @@ img {
     color: #FFf;
 }
 
+.text-black {
+    color: #000;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
 .btn {
     padding: 0.5rem 1rem;
     border: none;
@@ -133,6 +141,11 @@ header {
 
 #main {
     height: 78vh;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
 }
 
 /* LAYOUT */
@@ -251,4 +264,43 @@ header {
 
 .row.g-5 .col {
     padding: 0 30px;
+}
+
+/* TABLE */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+
+    th,
+    td {
+        /* border: 1px solid #000; */
+        padding: 0px 8px;
+    }
+
+    th {
+        background-color: #FF2D20;
+        color: #fff;
+    }
+
+
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+        color: #000;
+
+        &:hover {
+            background-color: #cccccc;
+        }
+    }
+
+    tr:nth-child(odd) {
+        background-color: #1C1C1C;
+        color: #fff;
+
+        &:hover {
+            background-color: #3a3a3a;
+        }
+    }
 }
