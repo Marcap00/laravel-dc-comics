@@ -19,4 +19,9 @@ class Pokemon extends Model
     ];
 
     use HasFactory;
+
+    public function getAbstractImagePath()
+    {
+        return substr($this->image, 0, 25) . '...';
+    }
 }

@@ -36,7 +36,7 @@
                     <td class="text-center">{{ $p->stage_of_evolution }}</td>
                     <td class="text-center">{{ $p->height }}</td>
                     <td class="text-center">{{ $p->weight }}</td>
-                    <td>{{ $p->image }}</td>
+                    <td>{{ $p->getAbstractImagePath() }}</td>
                     <td>
                         <div class="flex-align-center">
                             <a class="btn btn-red me-1" href="{{ route('pokemon.show', $p->id) }}"><i class="fas fa-eye"></i></a>
