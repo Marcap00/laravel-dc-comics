@@ -9,7 +9,8 @@
 @section('main-content')
 <main>
     <div class="container">
-        <a class="btn btn-red my-3" href="{{ route('pokemon.create') }}">Aggiungi un nuovo pokemon</a>
+        <a class="btn btn-red my-3 me-2" href="{{ route('pokemon.create') }}">Add new Pokemon</a>
+        <a href="#" class="btn btn-grey my-3">Go to the bin <i class="fas fa-trash"></i></a>
         <table class="table table-responsive table-dark table-striped table-hover table-borderless mb-0 align-middle">
             <thead class="text-red">
                 <tr class="text-center text-red">
@@ -41,7 +42,7 @@
                         <div class="flex-align-center">
                             <a class="btn btn-red me-1" href="{{ route('pokemon.show', $p->id) }}"><i class="fas fa-eye"></i></a>
                             <a class="btn btn-secondary me-1" href="{{ route('pokemon.edit', $p->id) }}"><i class="fas fa-pencil"></i></a>
-                            <form action="{{ route('pokemon.destroy', $p->id) }}" method="POST">
+                            <form class="del-form" action="{{ route('pokemon.destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-red" type="submit"><i class="fas fa-trash fa-lg"></i></button>
@@ -58,5 +59,9 @@
         </table>
     </div>
 </main>
+@endsection
+
+@section('additional-scripts')
+@vite('resources/js/pokemon/del-confirmation.js')
 @endsection
 
