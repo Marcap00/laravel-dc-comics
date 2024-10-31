@@ -130,6 +130,7 @@ img {
     }
 }
 
+.active
 /* GENERAL */
 
 body {
@@ -147,16 +148,21 @@ ul {
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 
     h1 {
         color: #FF2D20;
     }
 
-    color: #FF2D20;
 
     &:hover {
         text-decoration: underline;
         color: #FF2D20;
+    }
+
+    &.active {
+        color: #FF2D20;
+        text-decoration: underline;
     }
 }
 
@@ -166,6 +172,7 @@ footer {
 }
 
 header {
+
     h1 {
         color: #FF2D20;
         font-size: 32px;
