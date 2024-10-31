@@ -63,9 +63,9 @@ class PokemonController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StorePokemonRequest $request, string $id)
     {
-        $dataForm = $request->all();
+        $dataForm = $request->validate();
 
         $updatedPokemon = Pokemon::findorFail($id);
         $updatedPokemon->update($dataForm);
