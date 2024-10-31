@@ -130,7 +130,6 @@ img {
     }
 }
 
-.active
 /* GENERAL */
 
 body {
@@ -150,19 +149,10 @@ a {
     text-decoration: none;
     color: #fff;
 
-    h1 {
-        color: #FF2D20;
-    }
-
-
-    &:hover {
-        text-decoration: underline;
-        color: #FF2D20;
-    }
-
+    &:hover,
     &.active {
-        color: #FF2D20;
         text-decoration: underline;
+        color: #FF2D20;
     }
 }
 
