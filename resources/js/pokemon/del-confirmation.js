@@ -14,7 +14,7 @@ delForms.forEach(form => {
         const name = form.getAttribute("data-name");
 
         // Show a confirmation message
-        const confirm = window.confirm(`Are you sure you want to delete this ${name}?`);
+        const confirm = window.confirm(`Are you sure you want to delete ${name}?`);
 
         if (confirm) {
             form.submit();

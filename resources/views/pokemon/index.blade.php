@@ -9,7 +9,7 @@
 @section('main-content')
 <main>
     <div class="container">
-        <a class="btn btn-red my-3 me-2" href="{{ route('pokemon.create') }}">Add new Pokemon</a>
+        <a class="btn btn-red my-3 me-2" href="{{ route('pokemon.create') }}">Add new Pokemon <i class="fas fa-plus"></i></a>
         <a href="{{ route('pokemon.bin') }}" class="btn btn-grey my-3">Go to the bin <i class="fas fa-trash"></i></a>
         <table class="table table-responsive table-dark table-striped table-hover table-borderless mb-0 align-middle">
             <thead class="text-red">
@@ -52,7 +52,7 @@
                 </tr>
                 @empty
                 <tr>
-                    <td colspan="9" class="text-red">No more pokemon available...</td>
+                    <td colspan="10" class="text-red">No more pokemon available...</td>
                 </tr>
                 @endforelse
             </tbody>

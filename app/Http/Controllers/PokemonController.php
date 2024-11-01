@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePokemonRequest;
 use App\Models\Pokemon;
-use Illuminate\Http\Request;
 
 class PokemonController extends Controller
 {
@@ -89,7 +88,7 @@ class PokemonController extends Controller
         $restoredPokemon = Pokemon::onlyTrashed()->findorFail($id);
         $restoredPokemon->restore();
 
-        return redirect()->route('pokemon.show', $restoredPokemon->id);
+        return redirect()->route('pokemon.bin');
     }
 
     public function permanentDestroy(string $id)
@@ -97,10 +96,10 @@ class PokemonController extends Controller
         $permanentDestroyedPokemon = Pokemon::onlyTrashed()->findorFail($id);
         $permanentDestroyedPokemon->forceDelete();
 
-        return redirect()->route('pokemon.index');
+        return redirect()->route('pokemon.bin');
     }
 
-    public function deletedAll()
+    public function bin()
     {
         // if we are in front of a query builder we must use get() method
         $pokemon = Pokemon::onlyTrashed()->get();
