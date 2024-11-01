@@ -83,4 +83,28 @@ class PokemonController extends Controller
 
         return redirect()->route('pokemon.index');
     }
+
+    public function restore(string $id)
+    {
+        $restoredPokemon = Pokemon::onlyTrashed()->findorFail($id);
+        $restoredPokemon->restore();
+
+        return redirect()->route('pokemon.show', $restoredPokemon->id);
+    }
+
+    public function permanentDestroy(string $id)
+    {
+        $permanentDestroyedPokemon = Pokemon::onlyTrashed()->findorFail($id);
+        $permanentDestroyedPokemon->forceDelete();
+
+        return redirect()->route('pokemon.index');
+    }
+
+    public function deletedAll()
+    {
+        // if we are in front of a query builder we must use get() method
+        $pokemon = Pokemon::onlyTrashed()->get();
+        $links_pages = config('links_pages');
+        return view('pokemon.bin', compact('pokemon', 'links_pages'));
+    }
 }
