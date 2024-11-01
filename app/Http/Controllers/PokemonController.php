@@ -14,7 +14,7 @@ class PokemonController extends Controller
     {
         $pokemon = Pokemon::all();
         $links_pages = config('links_pages');
-        return view('pokemon.index', compact('pokemon', 'links_pages'));
+        return view('layouts.table', compact('pokemon', 'links_pages'));
     }
 
     /**
@@ -104,6 +104,6 @@ class PokemonController extends Controller
         // if we are in front of a query builder we must use get() method
         $pokemon = Pokemon::onlyTrashed()->get();
         $links_pages = config('links_pages');
-        return view('pokemon.bin', compact('pokemon', 'links_pages'));
+        return view('layouts.table', compact('pokemon', 'links_pages'));
     }
 }
