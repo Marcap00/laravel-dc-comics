@@ -22,10 +22,12 @@ Route::name('pokemon.')->prefix('pokemon')->group(function () {
     Route::get('/', [PokemonController::class, 'index'])->name('index');
     Route::post('/', [PokemonController::class, 'store'])->name('store');
     Route::get('/create', [PokemonController::class, 'create'])->name('create');
+    Route::get('/bin', [PokemonController::class, 'deletedAll'])->name('bin');
     Route::get('/{id}', [PokemonController::class, 'show'])->name('show');
     Route::get('/{id}/edit', [PokemonController::class, 'edit'])->name('edit');
     Route::put('/{id}', [PokemonController::class, 'update'])->name('update');
     Route::delete('/{id}', [PokemonController::class, 'destroy'])->name('destroy');
+    Route::delete('/{id}/permanent-delete', [PokemonController::class, 'permanentDestroy'])->name('permanent-destroy');
 });
 
 /* Route::get('/pokemon', [PokemonController::class, 'index'])->name('pokemon.index');
