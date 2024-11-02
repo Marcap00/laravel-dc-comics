@@ -4,7 +4,7 @@
 @section('main-content')
 <main id="main">
     <div class="container py-3">
-        <div class="card">
+        <div class="card hover">
             <div class="card-img">
                 <img src="{{ $p->image }}" alt="{{ $p->name }}">
             </div>

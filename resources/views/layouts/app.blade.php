@@ -16,10 +16,10 @@
 <body>
     {{-- Include header --}}
     @include('includes.header')
-    <main>
-        {{-- Main Content --}}
-        @yield('main-content')
-    </main>
+
+    {{-- Main Content --}}
+    @yield('main-content')
+
     {{-- Include footer --}}
     @include('includes.footer')
     {{-- JS Scripts --}}

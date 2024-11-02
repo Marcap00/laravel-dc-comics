@@ -7,7 +7,7 @@
         <div class="row row-cols-4 row-cols-sm-1 row-cols-md-2 g-2">
             @forelse ($pokemon as $p)
             <div class="col my-2">
-                <div class="card">
+                <div class="card hover">
                     <a href="{{route('pokemon.show', $p->id)}}">
                         <div class="card-img">
                             <img src="{{ $p->image }}" alt="{{ $p->name }}">

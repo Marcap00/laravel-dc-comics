@@ -5,7 +5,23 @@
     border-radius: 25px;
     background: transparent;
     text-align: center;
+
+    &.hover:hover {
+        border: 3px solid #FF2D20;
+        transition: all 0.3s;
+        scale: 1.05;
+
+        .card-title,
+        .card-text span {
+            color: #FF2D20;
+        }
+    }
+
+    &.hover:active {
+        scale: 1;
+    }
 }
+
 
 .card-body {
     min-height: 250px;
@@ -31,6 +47,4 @@
 
         font-weight: 600;
     }
-
-
 }

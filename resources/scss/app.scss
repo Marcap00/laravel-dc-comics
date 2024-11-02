@@ -83,6 +83,7 @@ img {
 
     &:hover {
         scale: 1.05;
+        transition: all 0.3s;
     }
 
     &.btn-red {
@@ -148,12 +149,6 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-
-    &:hover,
-    &.active {
-        text-decoration: underline;
-        color: #FF2D20;
-    }
 }
 
 header,
@@ -161,26 +156,11 @@ footer {
     padding: 1rem;
 }
 
-header {
 
-    h1 {
-        color: #FF2D20;
-        font-size: 32px;
-        font-weight: 700;
 
-        span {
-            color: #fff;
-        }
-    }
-
-    h3 {
-        font-size: 19px;
-        font-weight: 700;
-    }
-}
-
-#main {
-    height: 78vh;
+main {
+    height: calc(100vh - 140px);
+    overflow-y: scroll;
 }
 
 button {
