@@ -26,15 +26,9 @@
         <table class="table table-responsive table-dark table-striped table-hover table-borderless mb-0 align-middle">
             <thead class="text-red">
                 <tr class="text-center text-red">
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Type</th>
-                    <th>Ability</th>
-                    <th>Stage of Evolution</th>
-                    <th>Height</th>
-                    <th>Weight</th>
-                    <th>Image</th>
+                    @foreach (config('table_heads') as $table_head)
+                    <th>{{ $table_head }}</th>
+                    @endforeach
                     <th></th>
                 </tr>
             </thead>
@@ -53,10 +47,10 @@
                     <td>
                         <div class="flex-align-center">
                             @if (Route::currentRouteName() == 'pokemon.index')
-                            <a class="btn btn-red me-1" href="{{ route('pokemon.show', $p->id) }}">
+                            <a class="btn btn-red me-2" href="{{ route('pokemon.show', $p->id) }}">
                                 <i class="fas fa-eye"></i>
                             </a>
-                            <a class="btn btn-secondary me-1" href="{{ route('pokemon.edit', $p->id) }}">
+                            <a class="btn btn-secondary me-2" href="{{ route('pokemon.edit', $p->id) }}">
                                 <i class="fas fa-pencil"></i>
                             </a>
                             <form class="del-form" action="{{ route('pokemon.destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
@@ -70,7 +64,7 @@
                                 @method('PATCH')
                                 <button class="btn btn-warning me-2" type="submit"><i class="fas fa-rotate"></i></button>
                             </form>
-                            <form class="del-form" action="{{ route('pokemon.permanent-destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
+                            <form class="perma-del-form" action="{{ route('pokemon.permanent-destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-red" type="submit"><i class="fas fa-trash fa-lg"></i></button>
