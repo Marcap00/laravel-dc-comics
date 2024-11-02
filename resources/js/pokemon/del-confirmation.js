@@ -1,4 +1,4 @@
-// Get all delete forms
+/* // Get all delete forms
 const delForms = document.querySelectorAll('.del-form');
 const permaDelForms = document.querySelectorAll('.perma-del-form');
 
@@ -36,3 +36,4 @@ permaDelForms.forEach(form => {
         };
     });
 });
+ */

@@ -53,23 +53,57 @@
                             <a class="btn btn-secondary me-2" href="{{ route('pokemon.edit', $p->id) }}">
                                 <i class="fas fa-pencil"></i>
                             </a>
-                            <form class="del-form" action="{{ route('pokemon.destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn btn-red" type="submit"><i class="fas fa-trash fa-lg"></i></button>
-                            </form>
+
+                            <button class="btn btn-red" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <i class="fas fa-trash fa-lg"></i>
+                            </button>
+
                             @elseif (Route::currentRouteName() == 'pokemon.bin')
                             <form class="patch-form" action="{{ route('pokemon.restore', $p->id) }}" method="POST">
                                 @csrf
                                 @method('PATCH')
                                 <button class="btn btn-warning me-2" type="submit"><i class="fas fa-rotate"></i></button>
                             </form>
-                            <form class="perma-del-form" action="{{ route('pokemon.permanent-destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn btn-red" type="submit"><i class="fas fa-trash fa-lg"></i></button>
-                            </form>
+
+                            <button class="btn btn-red" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <i class="fas fa-trash fa-lg"></i>
+                            </button>
+
                             @endif
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade del-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-theme="dark" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">{{ (Route::currentRouteName() == 'pokemon.bin') ? 'Permanent deleting' : 'Deleting'}} {{ $p->name }}</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <img id="modal-image" src="{{ $p->image }}" alt="{{$p->name }}">
+                                        <p>Are you sure you want to {{ (Route::currentRouteName() == 'pokemon.bin') ? 'permanent' : ''}} delete <span class="fw-bold">{{ $p->name }}</span>?</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        @if (Route::currentRouteName() == 'pokemon.index')
+                                        <form class="del-form" action="{{ route('pokemon.destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-red" type="submit">Cancel <i class="fas fa-trash fa-lg"></i></button>
+                                        </form>
+                                        @elseif (Route::currentRouteName() == 'pokemon.bin')
+                                        <form class="perma-del-form" action="{{ route('pokemon.permanent-destroy', $p->id) }}" method="POST" data-name="{{ $p->name }}" data-image="{{ $p->image }}">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-red" type="submit">Delete <i class="fas fa-trash fa-lg"></i></button>
+                                        </form>
+                                        @endif
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </td>
                 </tr>
