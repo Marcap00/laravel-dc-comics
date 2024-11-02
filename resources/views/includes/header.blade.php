@@ -5,7 +5,7 @@
     </div>
     <div class="header-right">
         <ul class="flex-align-center text-white my-3">
-            @foreach ($links_pages as $route=>$text)
+            @foreach (config('links_pages') as $route=>$text)
             <li>
                 <a class="{{ (Route::currentRouteName() == $route) ? 'active' : ''}} me-2" href="{{ route($route) }}">
                     <h3>{{$text}}</h3>

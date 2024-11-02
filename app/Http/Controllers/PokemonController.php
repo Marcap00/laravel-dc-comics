@@ -13,8 +13,7 @@ class PokemonController extends Controller
     public function index()
     {
         $pokemon = Pokemon::all();
-        $links_pages = config('links_pages');
-        return view('layouts.table', compact('pokemon', 'links_pages'));
+        return view('layouts.table', compact('pokemon'));
     }
 
     /**
@@ -22,9 +21,7 @@ class PokemonController extends Controller
      */
     public function create()
     {
-
-        $links_pages = config('links_pages');
-        return view('pokemon.create', compact('links_pages'));
+        return view('pokemon.create');
     }
 
     /**
@@ -45,8 +42,7 @@ class PokemonController extends Controller
     public function show(string $id)
     {
         $p = Pokemon::findorFail($id);
-        $links_pages = config('links_pages');
-        return view('pokemon.show', compact('p', 'links_pages'));
+        return view('pokemon.show', compact('p'));
     }
 
     /**
@@ -55,8 +51,7 @@ class PokemonController extends Controller
     public function edit(string $id)
     {
         $p = Pokemon::findorFail($id);
-        $links_pages = config('links_pages');
-        return view('pokemon.edit', compact('p', 'links_pages'));
+        return view('pokemon.edit', compact('p'));
     }
 
     /**
@@ -79,7 +74,6 @@ class PokemonController extends Controller
     {
         $p = Pokemon::findorFail($id);
         $p->delete();
-
         return redirect()->route('pokemon.index');
     }
 
@@ -87,7 +81,6 @@ class PokemonController extends Controller
     {
         $restoredPokemon = Pokemon::onlyTrashed()->findorFail($id);
         $restoredPokemon->restore();
-
         return redirect()->route('pokemon.bin');
     }
 
@@ -103,7 +96,6 @@ class PokemonController extends Controller
     {
         // if we are in front of a query builder we must use get() method
         $pokemon = Pokemon::onlyTrashed()->get();
-        $links_pages = config('links_pages');
-        return view('layouts.table', compact('pokemon', 'links_pages'));
+        return view('layouts.table', compact('pokemon'));
     }
 }
