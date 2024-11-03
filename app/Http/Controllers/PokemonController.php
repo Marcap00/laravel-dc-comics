@@ -51,7 +51,7 @@ class PokemonController extends Controller
     public function edit(string $id)
     {
         $p = Pokemon::findorFail($id);
-        return view('pokemon.edit', compact('p'));
+        return view('layouts.form', compact('p'));
     }
 
     /**
