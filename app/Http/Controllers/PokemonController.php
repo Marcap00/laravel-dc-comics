@@ -29,7 +29,7 @@ class PokemonController extends Controller
      */
     public function store(StorePokemonRequest $request)
     {
-        $dataForm = $request->validate();
+        $dataForm = $request->validated();
 
         $newPokemon = Pokemon::create($dataForm);
 
@@ -51,7 +51,7 @@ class PokemonController extends Controller
     public function edit(string $id)
     {
         $p = Pokemon::findorFail($id);
-        return view('layouts.form', compact('p'));
+        return view('pokemon.edit', compact('p'));
     }
 
     /**
@@ -59,7 +59,7 @@ class PokemonController extends Controller
      */
     public function update(StorePokemonRequest $request, string $id)
     {
-        $dataForm = $request->validate();
+        $dataForm = $request->validated();
 
         $updatedPokemon = Pokemon::findorFail($id);
         $updatedPokemon->update($dataForm);
