@@ -10,7 +10,13 @@ class HomeController extends Controller
     public function home()
     {
         $pokemon = Pokemon::all();
-        $links_pages = config('links_pages');
-        return view('pages.home', compact('links_pages', 'pokemon'));
+        return view('pages.home', compact('pokemon'));
+    }
+
+    public function filterStage(string $stage)
+    {
+        $pokemon = Pokemon::where('stage_of_evolution', $stage)->get();
+        /* @dd($pokemon); */
+        return view('pages.home', compact('pokemon'));
     }
 }

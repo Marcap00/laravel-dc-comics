@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/{stage}', [HomeController::class, 'filterStage'])->name('filter');
 
 /* Pokemon Resources */
 Route::name('pokemon.')->prefix('pokemon')->group(function () {
