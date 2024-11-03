@@ -50,3 +50,57 @@ Venonat, Insect Pokémon, Bug/Poison, Compound Eyes, 1, 1.0, 30.0, https://raw.g
 Venomoth, Poison Moth Pokémon, Bug/Poison, Shield Dust, 2, 1.5, 12.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png
 Diglett, Mole Pokémon, Ground, Sand Veil, 1, 0.2, 0.8, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png
 Dugtrio, Mole Pokémon, Ground, Sand Veil, 2, 0.7, 33.3, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png
+Meowth, Scratch Cat Pokémon, Normal, Pickup, 1, 0.4, 4.2, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png
+Persian, Classy Cat Pokémon, Normal, Limber, 2, 1.0, 32.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png
+Psyduck, Duck Pokémon, Water, Damp, 1, 0.8, 19.6, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png
+Golduck, Duck Pokémon, Water, Damp, 2, 1.7, 76.6, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png
+Mankey, Pig Monkey Pokémon, Fighting, Vital Spirit, 1, 0.5, 28.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png
+Primeape, Pig Monkey Pokémon, Fighting, Vital Spirit, 2, 1.0, 32.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png
+Growlithe, Puppy Pokémon, Fire, Intimidate, 1, 0.7, 19.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png
+Arcanine, Legendary Pokémon, Fire, Intimidate, 2, 1.9, 155.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png
+Poliwag, Tadpole Pokémon, Water, Water Absorb, 1, 0.6, 12.4, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png
+Poliwhirl, Tadpole Pokémon, Water, Water Absorb, 2, 1.0, 20.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png
+Poliwrath, Tadpole Pokémon, Water/Fighting, Water Absorb, 3, 1.3, 54.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png
+Abra, Psi Pokémon, Psychic, Synchronize, 1, 0.9, 19.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png
+Kadabra, Psi Pokémon, Psychic, Synchronize, 2, 1.3, 56.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png
+Alakazam, Psi Pokémon, Psychic, Synchronize, 3, 1.5, 48.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png
+Machop, Superpower Pokémon, Fighting, Guts, 1, 0.8, 19.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png
+Machoke, Superpower Pokémon, Fighting, Guts, 2, 1.5, 70.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png
+Machamp, Superpower Pokémon, Fighting, Guts, 3, 1.6, 130.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png
+Bellsprout, Flower Pokémon, Grass/Poison, Chlorophyll, 1, 0.7, 4.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png
+Weepinbell, Flycatcher Pokémon, Grass/Poison, Chlorophyll, 2, 1.0, 6.4, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png
+Victreebel, Flycatcher Pokémon, Grass/Poison, Chlorophyll, 3, 1.7, 15.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png
+Tentacool, Jellyfish Pokémon, Water/Poison, Clear Body, 1, 0.9, 45.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png
+Tentacruel, Jellyfish Pokémon, Water/Poison, Clear Body, 2, 1.6, 55.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png
+Geodude, Rock Pokémon, Rock/Ground, Rock Head, 1, 0.4, 20.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png
+Graveler, Rock Pokémon, Rock/Ground, Rock Head, 2, 1.0, 105.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png
+Golem, Megaton Pokémon, Rock/Ground, Rock Head, 3, 1.4, 300.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png
+Ponyta, Fire Horse Pokémon, Fire, Run Away, 1, 1.0, 30.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png
+Rapidash, Fire Horse Pokémon, Fire, Run Away, 2, 1.7, 95.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png
+Slowpoke, Dopey Pokémon, Water/Psychic, Oblivious, 1, 1.2, 36.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png
+Slowbro, Hermit Crab Pokémon, Water/Psychic, Oblivious, 2, 1.6, 78.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png
+Magnemite, Magnet Pokémon, Electric/Steel, Magnet Pull, 1, 0.3, 6.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png
+Magneton, Magnet Pokémon, Electric/Steel, Magnet Pull, 2, 1.0, 60.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png
+Farfetch'd, Wild Duck Pokémon, Normal/Flying, Keen Eye, 1, 0.8, 15.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png
+Doduo, Twin Bird Pokémon, Normal/Flying, Run Away, 1, 1.4, 39.2, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png
+Dodrio, Triple Bird Pokémon, Normal/Flying, Run Away, 2, 1.8, 85.2, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png
+Seel, Sea Lion Pokémon, Water, Thick Fat, 1, 1.1, 90.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png
+Dewgong, Sea Lion Pokémon, Water/Ice, Thick Fat, 2, 1.7, 120.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png
+Grimer, Sludge Pokémon, Poison, Stench, 1, 0.9, 30.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png
+Muk, Sludge Pokémon, Poison, Stench, 2, 1.2, 30.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png
+Shellder, Bivalve Pokémon, Water, Shell Armor, 1, 0.3, 4.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png
+Cloyster, Bivalve Pokémon, Water/Ice, Shell Armor, 2, 1.5, 132.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png
+Gastly, Gas Pokémon, Ghost/Poison, Levitate, 1, 1.3, 0.1, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png
+Haunter, Gas Pokémon, Ghost/Poison, Levitate, 2, 1.6, 0.1, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png
+Gengar, Shadow Pokémon, Ghost/Poison, Levitate, 3, 1.5, 40.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png
+Onix, Rock Snake Pokémon, Rock/Ground, Rock Head, 1, 8.8, 210.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png
+Drowzee, Hypnosis Pokémon, Psychic, Insomnia, 1, 1.0, 32.4, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png
+Hypno, Hypnosis Pokémon, Psychic, Insomnia, 2, 1.6, 75.6, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png
+Krabby, River Crab Pokémon, Water, Hyper Cutter, 1, 0.4, 6.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png
+Kingler, Pincer Pokémon, Water, Hyper Cutter, 2, 1.3, 60.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png
+Voltorb, Ball Pokémon, Electric, Soundproof, 1, 0.5, 10.4, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png
+Electrode, Ball Pokémon, Electric, Soundproof, 2, 1.2, 66.6, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png
+Exeggcute, Egg Pokémon, Grass/Psychic, Chlorophyll, 1, 0.4, 2.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png
+Exeggutor, Coconut Pokémon, Grass/Psychic, Chlorophyll, 2, 2.0, 120.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png
+Cubone, Lonely Pokémon, Ground, Rock Head, 1, 0.4, 6.5, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png
+Marowak, Bone Keeper Pokémon, Ground, Rock Head, 2, 1.0, 45.0, https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png
